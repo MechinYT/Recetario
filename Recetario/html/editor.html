@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recipe Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/editor.css">
+</head>
+<body>
+
+  <h1 id="editor-title">New Recipe</h1>
+
+  <form id="recipe-form">
+
+    <label>
+      Title
+      <input type="text" id="title" required />
+    </label>
+
+    <label>
+      Description
+      <textarea id="description" rows="2"></textarea>
+    </label>
+
+    <label>
+      Image URL
+      <input type="url" id="image" placeholder="https://example.com/image.jpg" />
+    </label>
+
+    <h2>Tags</h2>
+    <div id="tags" class="tags"></div>
+    <div class="row">
+      <input type="text" id="new-tag" placeholder="Add tag" />
+      <button type="button" id="add-tag">Add</button>
+    </div>
+
+    <h2>Ingredients</h2>
+    <div id="ingredients"></div>
+    <button type="button" id="add-ingredient">Add Ingredient</button>
+
+    <h2>Steps</h2>
+    <div id="steps"></div>
+    <button type="button" id="add-step">Add Step</button>
+
+    <h2>Notes</h2>
+    <textarea id="notes" rows="4"></textarea>
+
+    <div class="actions">
+      <button type="submit">Save Recipe</button>
+      <button type="button" id="cancel">Cancel</button>
+    </div>
+
+  </form>
+
+  <script src="../js/editor.js"></script>
+</body>
+</html>
